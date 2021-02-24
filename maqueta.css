@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+:root {
+  --primary: #202020;
+  --background: #efefef;
+  --padding-default: 10px;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+body {
+  display: grid;
+  columns: 100%;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.header-nav {
+  display: flex;
+  height: 70px;
+  padding: var(--padding-default);
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-nav .logo-section {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 50px;
+  grid-template-columns: 50px 1fr;
+  flex: 1 0 auto;
+}
+
+.header-nav .logo-section .logo {
+  height: 100%;
+}
+
+.header-nav .menu-section {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.header-nav .menu-section .menu-element {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav .menu-section .menu-element.img > img {
+  height: 80%;
+}
+
+.header-nav .menu-section .menu-element:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer {
+  background-color: var(--primary);
+  color: var(--background);
+  padding: var(--padding-default);
+}
